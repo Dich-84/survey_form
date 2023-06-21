@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Car Market Form</title>
+  </head>
+  <body>
+    <h1 id="title">Car Market Survey</h1>
+    <p id="description">Thank you for taking this survey to help us in car market investigation</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your e-mail" required />
+        </label>
+        <label id="number-label" for="input">Age: <input id="number" type="number" min="16" max="120" placeholder="Enter your age" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="question">Which car would you preferably buy?</p>
+        <label for="new">
+          <input type="radio" name="car-status" id="new" class="inline" value="new" /> New</label>
+        <label for="used"><input type="radio" name="car-status" id="used" class="inline" value="used" /> Used</label>
+        <label for="no-matter"><input type="radio" name="car-status" id="no-matter" class="inline" value="no-matter"/> Doesn't matter</label>
+      </fieldset>
+      <fieldset>
+        <p class="question">Which car body type would you choose?</p>
+        <select id="dropdown">
+          <option>(select one)</option>
+          <option>Sedan</option>
+          <option>Hatchback</option>
+          <option>Coupe/Cabriolet</option>
+          <option>Minivan</option>
+          <option>SUV</option>
+          <option>Pickup</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p class="question">Which brand would you consider when choosing a car? (check all that apply)</p>
+        <div class="carbrands">
+        <div>
+          <label for="audi"><input class="inline" type="checkbox" value="1" id="audi" /> Audi</label>
+          <label for="bmw"><input class="inline" type="checkbox" value="2" id="bmw" /> BMW</label>
+          <label for="chevrolet"><input class="inline" type="checkbox" value="3" id="chevrolet" /> Chevrolet</label>
+          <label for="citroen"><input class="inline" type="checkbox" value="4" id="citroen" /> Citroen</label>
+          <label for="dodge"><input class="inline" type="checkbox" value="5" id="dodge" /> Dodge</label>
+          <label for="fiat"><input class="inline" type="checkbox" value="6" id="fiat" /> Fiat</label>
+          <label for="ford"><input class="inline" type="checkbox" value="7" id="ford" /> Ford</label>
+          <label for="honda"><input class="inline" type="checkbox" value="8" id="honda" /> Honda</label>
+          <label for="hyundai"><input class="inline" type="checkbox" value="9" id="hyundai" /> Hyundai</label>
+          <label for="jaguar"><input class="inline" type="checkbox" value="10" id="jaguar" /> Jaguar</label>
+          <label for="jeep"><input class="inline" type="checkbox" value="11" id="jeep" /> Jeep</label>
+          <label for="kia"><input class="inline" type="checkbox" value="12" id="kia" /> Kia</label>
+          <label for="lada"><input class="inline" type="checkbox" value="13" id="lada" /> Lada</label>
+        </div>
+        <div>
+           <label for="mazda"><input class="inline" type="checkbox" value="14" id="mazda" /> Mazda</label>
+          <label for="mercedes"><input class="inline" type="checkbox" value="15" id="mercedes" /> Mercedes</label>
+          <label for="mitsubishi"><input class="inline" type="checkbox" value="16" id="mitsubishi" /> Mitsubishi</label>
+          <label for="nissan"><input class="inline" type="checkbox" value="17" id="nissan" /> Nissan</label>
+          <label for="opel"><input class="inline" type="checkbox" value="18" id="opel" /> Opel</label>
+          <label for="peugeot"><input class="inline" type="checkbox" value="19" id="peugeot" /> Peugeot</label>
+          <label for="renault"><input class="inline" type="checkbox" value="20" id="renault" /> Renault</label>
+          <label for="skoda"><input class="inline" type="checkbox" value="21" id="skoda" /> Skoda</label>
+          <label for="suzuki"><input class="inline" type="checkbox" value="22" id="suzuki" /> Suzuki</label>
+          <label for="toyota"><input class="inline" type="checkbox" value="23" id="toyota" /> Toyota</label>
+          <label for="volkswagen"><input class="inline" type="checkbox" value="24" id="volkswagen" /> Volkswagen</label>
+          <label for="volvo"><input class="inline" type="checkbox" value="25" id="volvo" /> Volvo</label>
+          <label for="other"><input class="inline" type="checkbox" value="26" id="other" /> Other</label>
+       </div>
+       </div> 
+      </fieldset>
+      <fieldset>
+        <p class="question">Please write any additional comments about your choice or preferences:</p>
+        <textarea id="comments" rows="6" cols="30" placeholder="Enter your comments..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+      
+    </form>
+  </body>
+</html>
